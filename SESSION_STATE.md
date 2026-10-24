@@ -17,12 +17,12 @@ Format dibaca skrip `scripts/zlce/zlce-check.py`; jangan ubah nama field, kolom,
 
 ## 1. STATUS AKTIF
 
-* **Timestamp Audit:** 2026-10-24 16:30:00 WIB
+* **Timestamp Audit:** 2026-10-24 17:05:00 WIB
 * **Cabang Git:** `main`
 * **Task Terakhir DONE:** `TASK-006`
-* **Task Aktif:** -
-* **Status Task Aktif:** DONE
-* **Task Berikutnya:** -
+* **Task Aktif:** `TASK-007`
+* **Status Task Aktif:** IN_PROGRESS
+* **Task Berikutnya:** `TASK-008`
 
 ---
 
@@ -36,6 +36,9 @@ Format dibaca skrip `scripts/zlce/zlce-check.py`; jangan ubah nama field, kolom,
 | `TASK-004` | Form Pemesanan Baru, Laporan Omset & Fitur WhatsApp Lanjutan | TASK-003 | DONE | NewBookingModal.tsx (opsi 1 bulan + kurir tanpa NIK), DashboardView.tsx (filter omset Q-01), WA templates | ya |
 | `TASK-005` | Integrasi Wizard Recovery ZLCE Studio & Verifikasi Akhir | TASK-004 | DONE | RecoveryTab wizard terintegrasi di UI APK, zlce-check.py valid 0 error, build production sukses | ya |
 | `TASK-006` | Panel Manajemen User & Role-Based Access Control (4 Tingkat) | TASK-005 | DONE | UserManagementView, CourierDashboardView, TopBar Quick Switcher terpasang; tsc 0 error, build sukses | ya |
+| `TASK-007` | Modul Kwitansi Digital Paperless & Salin Teks Ringkasan Nota Kasir Cepat | TASK-006 | IN_PROGRESS | - | - |
+| `TASK-008` | Sistem Countdown Pengembalian Real-Time & Alert Jatuh Tempo di Dashboard/Kurir | TASK-007 | PENDING | - | - |
+| `TASK-009` | Master Model Motor Dinamis & Manajemen Tarif Khusus di FleetView | TASK-008 | PENDING | - | - |
 
 Bukti Verifikasi: ringkasan + lokasi bukti (mis. "lint 0 error, 12/12 test pass"). `DONE` tanpa bukti dan `Disetujui: ya` tidak valid.
 
@@ -45,13 +48,13 @@ Bukti Verifikasi: ringkasan + lokasi bukti (mis. "lint 0 error, 12/12 test pass"
 
 Catatan tulis-dahulu: isi SEBELUM memulai langkah multi-berkas, perbarui SESUDAH langkah selesai. Kosongkan (semua `-`) saat task `DONE`.
 
-* **Task:** -
-* **Langkah Sedang Dikerjakan:** -
-* **Berkas Direncanakan/Disentuh:** -
-* **Sudah Dilakukan:** -
-* **Langkah Berikutnya (persis):** -
-* **Perintah Verifikasi:** -
-* **Diperbarui:** 2026-10-24 16:30:00 WIB
+* **Task:** TASK-007
+* **Langkah Sedang Dikerjakan:** Pembuatan DigitalReceiptModal.tsx dan tombol Kwitansi Digital di BookingsView & CourierDashboardView
+* **Berkas Direncanakan/Disentuh:** src/components/DigitalReceiptModal.tsx, src/components/BookingsView.tsx, src/components/CourierDashboardView.tsx, src/App.tsx
+* **Sudah Dilakukan:** Backlog FASE 6 didaftarkan dan TASK-007 dimulai
+* **Langkah Berikutnya (persis):** Menulis src/components/DigitalReceiptModal.tsx
+* **Perintah Verifikasi:** npm run lint && python3 scripts/zlce/zlce-check.py .
+* **Diperbarui:** 2026-10-24 17:05:00 WIB
 
 ---
 
